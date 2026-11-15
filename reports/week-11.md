@@ -6,9 +6,9 @@ Set up the environment (Node.js 22, API key in `.env`, `.env.example`). Integrat
 
 ## Important Commits
 
-- Commit hash: FILL_AFTER_COMMIT
+- Commit hash: 06403e3
 - Description: Integrate Gemini API and first working LLM request
-- Link: https://github.com/bakhyttuly/css4007-ai-agents-final/commit/FILL_AFTER_COMMIT
+- Link: https://github.com/bakhyttuly/css4007-ai-agents-final/commit/06403e3
 
 ## Current Functionality
 

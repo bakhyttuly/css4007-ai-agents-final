@@ -4,9 +4,9 @@
 Forked the instructor repository, chose level C, selected the topic (Academic Advisor Agent), and completed the project proposal. The proposal was completed late, on 15 November 2026 (semester week 11).
 
 ## Important Commits
-- Commit hash: TODO
+- Commit hash: 8ec55ab
 - Description: Complete project proposal and week 10 report
-- Link: TODO
+- Link: https://github.com/bakhyttuly/css4007-ai-agents-final/commit/8ec55ab
 
 ## Current Functionality
 No application code yet; planning only.

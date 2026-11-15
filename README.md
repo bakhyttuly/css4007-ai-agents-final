@@ -6,6 +6,33 @@
 
 Design, implement, test, and demonstrate an application powered by an LLM. You may choose any language, model provider, local model, or agent framework. You must understand and be able to explain your implementation. AI coding assistants are allowed; disclose their use.
 
+## My project: Academic Advisor Agent (level C)
+
+An LLM agent that answers student questions about courses (credits, exam dates, instructors) and calculates GPA by calling tools instead of guessing. Plan: [reports/proposal.md](reports/proposal.md).
+
+**Status (semester week 11):** Gemini API integration and the first working request. Tools, validation and the agent loop are planned for weeks 12-14.
+
+### Setup
+
+Requires Node.js 22 or later. No npm dependencies.
+
+1. Clone the repository and open the folder.
+2. Copy `.env.example` to `.env` and put your key in `GEMINI_API_KEY`.
+3. `.env` is in `.gitignore`; never commit your key.
+
+The default model is `gemini-3.5-flash-lite` (change it with `GEMINI_MODEL`).
+
+### Run
+
+```
+node --env-file=.env src/index.mjs "Hi! Answer in one sentence."
+```
+
+### Code layout
+
+- `src/llm.mjs`: `ask(prompt)` sends one request to the Gemini API and returns the text. It reports a missing key, network errors, timeouts, API errors and empty responses.
+- `src/index.mjs`: command-line entry point.
+
 ## Choose a level
 
 | Level | What you build | Main requirements | Detailed instructions |

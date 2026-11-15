@@ -54,7 +54,9 @@ C
 - `calculate_gpa`: needed when the user asks to compute GPA; arithmetic done by a tool is exact, while LLM arithmetic can be wrong.
 
 ## Model Selection
-claude-haiku-5-5 via the Anthropic API with tool calling. The API key is stored in `.env` and never committed.
+gemini-3.5-flash-lite via the Google Gemini API (`generateContent`) with function calling. The API key is stored in `.env` and never committed.
+
+Change documented in semester week 11: the original proposal named claude-haiku-5-5 (Anthropic API). The project uses Gemini instead.
 
 ## Architecture
 User Request -> LLM -> Tool Selection -> Argument Validation -> Tool Execution -> Tool Result back to LLM -> Final Answer. Every tool call is written to a log.
